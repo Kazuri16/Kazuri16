@@ -55,3 +55,4 @@
 - Missing periodic frames, RPM spikes and invalid value injections.
 - GPS lock/loss scenarios for fallback coordinates handling.
 - Long-run stress test with periodic forced resets.
+- Host simulation harness (`firmware/tests/simulate_logger.c`) to replay synthetic CAN+GPS sequences and verify anomaly outcomes before target flashing.

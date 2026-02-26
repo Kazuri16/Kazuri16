@@ -21,3 +21,9 @@ Embedded-only firmware architecture and implementation scaffold for a passive CA
 gcc -std=c11 -Wall -Wextra -Ifirmware/include \
   firmware/src/anomaly_engine.c firmware/tests/test_anomaly.c -lm -o /tmp/test_anomaly && /tmp/test_anomaly
 ```
+
+## Simulation test (host)
+```bash
+./firmware/tests/run_simulation.sh
+```
+This replays synthetic CAN + GPS traffic and validates anomaly detection behavior without hardware.
